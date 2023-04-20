@@ -1,0 +1,123 @@
+// DarkModeSwitch:
+
+.themeSwitch {
+  align-self: center;
+  background: $gradient;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.25rem;
+  width: 2.6rem;
+  margin: 0 1rem 0 1rem;
+
+  &::after {
+    display: block;
+    background: darken($color: white, $amount: 30);
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: unset;
+    border-radius: 3rem;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+    content: "";
+  }
+
+  &.dark {
+    background: -webkit-linear-gradient(
+      35deg,
+      // rgb(0, 183, 255),
+      rgba(29, 38, 253, 1),
+      rgb(84, 50, 207)
+    );
+
+    &::after {
+      right: unset;
+      left: 0;
+    }
+  }
+
+  span {
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    display: block;
+    color: white;
+    background: none;
+  }
+
+  @media (max-width: 1024px) {
+    margin: 0;
+  }
+}
+
+// Social:
+
+.Social {
+  position: fixed;
+  z-index: 10;
+  justify-self: center;
+  top: 50%;
+  left: 1.5rem;
+  display: none;
+
+  li {
+    position: relative;
+    padding-block: 0.75rem;
+  }
+
+  a {
+    color: $grey-lm;
+    height: 3rem;
+    width: 3rem;
+    transition: 0.5s;
+
+    > * {
+      height: 3rem;
+      width: 3rem;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 12rem;
+    margin: 0px auto;
+    background-color: $grey-lm;
+    margin-block: 0.75rem;
+  }
+}
+
+.dark .Social {
+  a {
+    color: $grey-dm;
+    height: 3rem;
+    width: 3rem;
+    transition: 0.5s;
+
+    > * {
+      height: 3rem;
+      width: 3rem;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &::after {
+    background-color: $grey-dm;
+  }
+}

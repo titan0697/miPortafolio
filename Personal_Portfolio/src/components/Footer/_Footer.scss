@@ -1,0 +1,83 @@
+.Footer__section {
+  background-color: $translucid-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 60px 1rem 60px;
+  min-height: 20vh;
+  background-color: lighten($color: $grey-dm, $amount: 5);
+  
+
+  .Footer__social {
+    margin-bottom: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    > a {
+      height: fit-content;
+      width: fit-content;
+      color: $dark-bg;
+      color: white;
+      cursor: pointer;
+      margin-inline: 1rem;
+      transition: 1s;
+
+      > * {
+        height: 3rem;
+        width: 3rem;
+      }
+
+      &:hover {
+        color: darken($color: white, $amount: 50);
+        transition: 0.5s;
+      }
+    }
+  }
+
+  .Footer__terms {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    height: fit-content;
+
+    display: none;
+
+    > a {
+      color: $dark-bg;
+      color: white;
+      margin-inline: 1rem;
+      transition: 1s;
+
+      &:hover {
+        color: darken($color: white, $amount: 50);
+        transition: 0.5s;
+      }
+    }
+  }
+
+  .Footer__copyright {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: rgb(205, 205, 205);
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .Footer__terms {
+    gap: 0.5rem;
+    height: fit-content;
+
+    > a {
+      font-size: 14px;
+    }
+  }
+}
+
+.dark .Footer__social a,
+.dark .Footer__terms a {
+  color: white;
+}

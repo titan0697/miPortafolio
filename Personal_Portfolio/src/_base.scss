@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// General:
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation: fadeInAnimation ease-in 2s;
+  background-color: white;
+  color: black;
+
+  &.dark {
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation: fadeInAnimation ease-in 2s;
+    background-color: $dark-bg;
+    color: white;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+input,
+textarea {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+button {
+  font-weight: 500;
+}
+
+// GENERAL CLASSES:
+
+.sr-only {
+  display: none;
+}
+
+.external-link-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.external-link {
+  color: black;
+  padding: 0.25rem 1rem;
+  border-radius: 50px;
+  background-color: $grey-lm;
+  transition: all 0.3s ease-in-out;
+  font-weight: 400;
+  width: fit-content;
+  cursor: pointer;
+  border: 1px solid $grey-lm;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: black;
+    background: white;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 0.9rem;
+  }
+}
+
+.dark .external-link {
+  background-color: $grey-dm;
+  border: 1px solid $grey-dm;
+  color: white;
+  &:hover {
+    color: black;
+    background: white;
+  }
+}
+
+// MEDIA QUERIES:
+
+@media (min-width: 1024px) {
+  section.section {
+    min-height: 100vh;
+  }
+
+  .section .About__section-content-right,
+  .section .Skills__section-content-left,
+  .section .Projects__section-content-right,
+  .section .Contact__section-content-left {
+    overflow: hidden;
+    p {
+      margin-bottom: 1rem;
+    }
+    h1 {
+      margin-top: 4rem;
+    }
+
+    .big-number {
+      top: 3.5rem;
+    }
+  }
+
+  .section .Skills__section-content-left,
+  .section .Contact__section-content-left {
+    .external-link-container {
+      justify-content: end;
+    }
+  }
+
+  .section .Projects__section-content-left {
+    height: 612px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  div .home__section-grid {
+    margin-inline: 2rem;
+  }
+
+  div .big-number {
+    left: 0;
+    top: 8rem;
+    font-size: 10rem;
+  }
+
+  .section .About__section-content-right,
+  .section .Skills__section-content-left,
+  .section .Projects__section-content-right,
+  .section .Contact__section-content-left {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid grey;
+    h1 {
+      margin: 8rem 0 1rem 0;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .section .About__section-grid,
+  .section .Projects__section-grid {
+    flex-direction: column-reverse;
+  }
+
+  .section .Projects__section-content-left {
+    // height: auto;
+  }
+
+  div .section-grid {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 3rem;
+    margin-block: 1rem;
+
+    p,
+    h1 {
+      text-align: left;
+    }
+  }
+
+  section.section {
+    padding-bottom: 4rem;
+    padding-inline: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  div .home__section-grid {
+    margin-inline: 1rem;
+  }
+
+  h2.big-number {
+    left: 0;
+    top: 8rem;
+    font-size: 10rem;
+  }
+
+  .section .About__section-content-right,
+  .section .Skills__section-content-left,
+  .section .Projects__section-content-right,
+  .section .Contact__section-content-left {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid grey;
+    h1 {
+      margin: 8rem 0 1rem 0;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .section .About__section-grid,
+  .section .Projects__section-grid {
+    flex-direction: column-reverse;
+  }
+
+  div .section-grid {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 1rem;
+    margin-block: 1rem;
+
+    p,
+    h1 {
+      text-align: left;
+    }
+  }
+
+  section.section {
+    padding-bottom: 6rem;
+  }
+}
+
+// Sections:
+
+.section {
+  border-bottom: 2px dashed rgba(128, 128, 128, 0.25);
+}
+
+.section-grid {
+  margin-block: auto;
+}
+
+// Scrollbar styles:
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: lighten($color: $dark-bg, $amount: 10);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(122, 122, 122);
+  border-radius: 1px;
+  outline: 1px solid var(--secondary-color);
+
+  &:hover {
+    background-color: rgb(143, 143, 143);
+  }
+}
+
+// Generic classes:
+
+.anchor {
+  background: $gradient;
+}
+
+.inter {
+  font-family: "Raleway";
+}
+
+.separator {
+  position: absolute;
+  width: 25vw;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  top: 5rem;
+  justify-self: center;
+  display: none;
+}
+
+.has-error {
+  color: red;
+  font-weight: 400 !important;
+}
+
+// Section numbers:
+
+.big-number {
+  color: gray;
+  font-size: 14rem;
+  font-weight: 600;
+  opacity: 0.05;
+  position: absolute;
+  top: 140px;
+  transform: translateY(-60px);
+  transition: 1s;
+  z-index: -1;
+
+  font-family: "Raleway";
+
+  &.active {
+    opacity: 0.3;
+    transform: translateY(-50%);
+  }
+}
+
+.title-number {
+  color: grey;
+  margin-right: 1rem;
+}
+
+// Gradient effect:
+
+.gradient-text {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-div {
+  background: $gradient;
+  -webkit-text-fill-color: transparent;
+}

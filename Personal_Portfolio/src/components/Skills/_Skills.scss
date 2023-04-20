@@ -1,0 +1,153 @@
+.Skills__section {
+  align-items: flex-start;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  background-color: $light-bg2;
+}
+
+.dark .Skills__section {
+  background-color: $dark-bg2;
+}
+
+.Skills__section-grid {
+  align-self: flex-start;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  max-width: 68rem;
+  gap: 10%;
+}
+
+.Skills__section-content-left {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .Skills__number {
+    right: 0;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+    margin-top: 10rem;
+    text-align: right;
+  }
+
+  p {
+    margin-bottom: 6rem;
+    font-weight: 200;
+    text-align: right;
+  }
+}
+
+.Skills__section-content-right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-content: center;
+
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
+// CAROUSEL
+
+@mixin white-gradient {
+  background: linear-gradient(
+    90deg,
+    $light-bg2 0%,
+    rgba(9, 9, 9, 0) 25%,
+    rgba(14, 14, 14, 0) 75%,
+    $light-bg2 100%
+  );
+}
+
+@mixin dark-gradient {
+  background: linear-gradient(
+    90deg,
+    $dark-bg2 0%,
+    rgba(9, 9, 9, 0) 25%,
+    rgba(14, 14, 14, 0) 75%,
+    $dark-bg2 100%
+  );
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100px * 14));
+  }
+}
+
+// Styling
+.slider {
+  background: $light-bg2;
+  height: 125px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  .slide-track > .slide > p {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  &::before {
+    @include white-gradient;
+    content: "";
+    height: 120px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .slide-track {
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+    width: calc(100px * 28);
+  }
+
+  .slide {
+    height: 120px;
+    width: 100px;
+    overflow: hidden;
+
+    img {
+      width: 100px;
+      height: 100px;
+      padding: 1rem;
+    }
+  }
+}
+
+.dark .slider {
+  background: $dark-bg2;
+
+  &::before {
+    @include dark-gradient;
+  }
+
+  .logoGitHub {
+    filter: invert(100%) sepia(1%) saturate(7500%) hue-rotate(51deg)
+      brightness(103%) contrast(104%);
+  }
+}
