@@ -60,9 +60,10 @@ export const Header = () => {
         data-visible="false"
       >
         <div className="Header__nav-container">
-          <a className="tag-logo font-subtitle gradient-text" href="#home">
-            &lt;Cristiam_Salazar/&gt;
-          </a>
+          <div className="mobile-buttons-container">
+            <DarkModeSwitch />
+            <HamburgerMenu navRef={headerNavRef} />
+          </div>
 
           <nav className="Header__nav">
             <ul className="Header__nav-ul" id="primary-navigation">
@@ -87,7 +88,7 @@ export const Header = () => {
                   <span aria-hidden="true" className="inter">
                     01
                   </span>
-                  Sobre mí
+                  Acerca de mí
                 </a>
               </li>
               <li>
@@ -128,10 +129,9 @@ export const Header = () => {
               </li>
             </ul>
           </nav>
-          <div className="mobile-buttons-container">
-            <DarkModeSwitch />
-            <HamburgerMenu navRef={headerNavRef} />
-          </div>
+          <a className="tag-logo font-subtitle gradient-text" href="#home">
+            &lt;Cristiam_Salazar/&gt;
+          </a>
         </div>
       </div>
     </header>

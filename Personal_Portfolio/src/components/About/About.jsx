@@ -40,7 +40,7 @@ export const About = () => {
               .
               <br /> <br />
               Siempre he tenido especial interés por el funcionamiento de las
-              tecnologías y por los sistemas lógicos en general. Esto, así como
+              tecnologías. Así como
               mi interés por lo visual y lo estético, me ha llevado a optar por
               la vía del desarrollo Front-End.
               <br /> <br />
@@ -65,7 +65,7 @@ export const About = () => {
             <div className="external-link-container">
               <a
                 className="external-link"
-                href="https://rodrigoglozdev.com/files/curriculum-rodrigogloz.pdf"
+                href="/CVTitan.pdf"
                 target="_blank"
                 type="application/pdf"
               >

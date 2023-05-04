@@ -17,10 +17,10 @@ export const ContactForm = () => {
     onSubmit: (values, { resetForm }) => {
       emailjs
         .sendForm(
-          "service_e7hqua4",
-          "template_6jfdsp9",
+          "G-945dcnmVkhVzdqB",
+          "G-945dcnmVkhVzdqB",
           ".contactForm",
-          "_O_EZMIznLRBItjTr"
+          "CYKSBxkC4jcRKzgU6HZEB"
         )
         .then(
           (result) => {

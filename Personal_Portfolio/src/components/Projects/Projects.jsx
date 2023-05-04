@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import logoHTML from "../../assets/logos/html-logo.svg";
 import logoCSS from "../../assets/logos/css-logo.svg";
-import logoSass from "../../assets/logos/sass-logo.svg";
-import logoReact from "../../assets/logos/react-logo.svg";
+import logoAngular from "../../assets/logos/logo-angular.svg";
+import logoMongo from "../../assets/logos/mongodb-ar21.svg";
 import logoMongoDB from "../../assets/logos/mongodb-logo.svg";
 import logoNode from "../../assets/logos/node-logo.svg";
 import logoFormik from "../../assets/logos/formik.svg";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faAngular, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Projects = () => {
@@ -36,22 +36,22 @@ export const Projects = () => {
         <div className="Projects__section-grid section-grid">
           <div className="Projects__section-content-left">
             <div className="project project1">
-              <h2>To-Do App</h2>
+              <h2>GIFs App</h2>
               <ul>
+                <li>
+                  <img src={logoAngular} alt="Angular logo" aria-hidden="true" />
+                </li>
                 <li>
                   <img src={logoHTML} alt="HTML logo" aria-hidden="true" />
                 </li>
                 <li>
                   <img src={logoCSS} alt="CSS logo" aria-hidden="true" />
                 </li>
-                <li>
-                  <img src={logoReact} alt="React logo" aria-hidden="true" />
-                </li>
               </ul>
-              <p>Aplicación de lista de tareas hecha con React.</p>
+              <p>Aplicación de GIFs creada con Angular.</p>
               <div className="project-links-container">
                 <a
-                  href="https://rodrigogloz.github.io/ToDo-App/"
+                  href="https://gifs-339db.web.app/"
                   target="_blank"
                 >
                   Ir al proyecto{" "}
@@ -60,7 +60,7 @@ export const Projects = () => {
                   ></FontAwesomeIcon>
                 </a>
                 <a
-                  href="https://github.com/rodrigogloz/ToDo-App"
+                  href="https://github.com/titan0697/GIFS"
                   target="_blank"
                 >
                   Ver código <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
@@ -68,30 +68,30 @@ export const Projects = () => {
               </div>
             </div>
             <div className="project project2">
-              <h2>Gif Finder</h2>
+              <h2>Country App</h2>
               <ul>
+                <li>
+                  <img src={logoAngular} alt="Angular logo" aria-hidden="true" />
+
+                </li>
                 <li>
                   <img src={logoHTML} alt="HTML logo" aria-hidden="true" />
                 </li>
                 <li>
                   <img src={logoCSS} alt="CSS logo" aria-hidden="true" />
                 </li>
-                <li>
-                  <img src={logoReact} alt="React logo" aria-hidden="true" />
-                </li>
               </ul>
               <p>
-                Aplicación de búsqueda de GIFs construída utilizando la API de
-                Giphy
+                Aplicación de búsqueda de paises construída con Angular.
               </p>
               <div className="project-links-container">
-                <a href="https://rodrigogloz.github.io/GifApp/" target="_blank">
+                <a href="https://country-app-f150e.web.app/countries/by-capital" target="_blank">
                   Ir al proyecto{" "}
                   <FontAwesomeIcon
                     icon={faArrowUpRightFromSquare}
                   ></FontAwesomeIcon>
                 </a>
-                <a href="https://github.com/rodrigogloz/GifApp" target="_blank">
+                <a href="https://github.com/titan0697/Country-app" target="_blank">
                   Ver código <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                 </a>
               </div>
@@ -103,7 +103,7 @@ export const Projects = () => {
                   <img src={logoHTML} alt="HTML logo" aria-hidden="true" />
                 </li>
                 <li>
-                  <img src={logoSass} alt="SASS logo" aria-hidden="true" />
+                 
                 </li>
                 <li>
                   <img
@@ -113,7 +113,7 @@ export const Projects = () => {
                   />
                 </li>
                 <li>
-                  <img src={logoReact} alt="React logo" aria-hidden="true" />
+                  
                 </li>
                 <li>
                   <img src={logoNode} alt="Node logo" aria-hidden="true" />
@@ -136,28 +136,25 @@ export const Projects = () => {
               </div>
             </div>
             <div className="project project4">
-              <h2>Web Personal</h2>
+              <h2>Hospital App</h2>
               <ul>
                 <li>
-                  <img src={logoHTML} alt="HTML logo" aria-hidden="true" />
+                  <img src={logoAngular} alt="HTML logo" aria-hidden="true" />
                 </li>
                 <li>
-                  <img src={logoSass} alt="SASS logo" aria-hidden="true" />
+                <img src={logoMongo} alt="HTML logo" aria-hidden="true" />
                 </li>
                 <li>
-                  <img src={logoReact} alt="React logo" aria-hidden="true" />
-                </li>
-                <li>
-                  <img src={logoFormik} alt="Formik logo" aria-hidden="true" />
+                <img src={logoNode} alt="HTML logo" aria-hidden="true" />
                 </li>
               </ul>
               <p>
-                Acceso al código fuente de mi página web personal. Diseñada y
-                construída desde cero con React.
+              App hospital se hizo el front-end con Angular, DB con MongoDB 
+                y se utilizo Node.js para las APIS.
               </p>
               <div className="project-links-container">
                 <a
-                  href="https://github.com/rodrigogloz/Personal_Portfolio"
+                  href="https://github.com/titan0697/angular-adv-adminpro-1.18.0"
                   target="_blank"
                 >
                   Ver código <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
@@ -175,6 +172,8 @@ export const Projects = () => {
             <p>
               Aquí encontrarás algunos de mis proyectos como desarrollador web,
               con enlaces a los mismos y acceso al código fuente.
+              Aclaro que hay proyectos tanto de Angular como de otras tecnologias que tambien 
+              manejo: Java, c#.
             </p>
             <div className="external-link-container">
               <a

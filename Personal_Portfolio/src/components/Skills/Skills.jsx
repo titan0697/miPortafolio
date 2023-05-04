@@ -8,6 +8,12 @@ import logoRedux from "../../assets/logos/redux-logo.svg";
 import logoGit from "../../assets/logos/git-logo.svg";
 import logoGitHub from "../../assets/logos/github-logo.svg";
 import logoLinux from "../../assets/logos/linux-logo.svg";
+import logoBootsrap from "../../assets/logos/bootstrap-5-1.svg";
+import syncfusion from "../../assets/logos/syncfusion.svg";
+import logoPrimeng from "../../assets/logos/_presskit_primeng-logo.svg";
+import logoAngular from "../../assets/logos/logo-angular.svg";
+import logoMongo from "../../assets/logos/mongodb-ar21.svg";
+import logoNode from "../../assets/logos/node-logo.svg";
 import logoVSCode from "../../assets/logos/vscode-logo.svg";
 import logoNPM from "../../assets/logos/npm-logo.svg";
 import logoJest from "../../assets/logos/jest-logo.svg";
@@ -67,81 +73,32 @@ export const Skills = () => {
             <p>
               Mis competencias se centran principalmente en el desarrollo
               Front-End, siendo mis herramientas principales HTML, CSS y
-              JavaScript con ReactJS.
-              <br />
-              <br />
-              También poseo conocimientos en el uso de la terminal, gestión de
-              dependencias mediante NPM, control de versiones mediante Git,
-              testing con Jest o manejo de preprocesadores como SASS, entre
-              otras herramientas.
+              JavaScript con Angular.
               <br />
               <br />
               Me encuentro en constante aprendizaje, expandiendo mis
-              conocimientos en React y aprendiendo nuevas librerías así como
+              conocimientos en Angular y aprendiendo nuevas librerías así como
               creando nuevos proyectos.
               <br />
-              <br />A continuación encontrarás una lista de las principales
+              <br />A continuación encontrarás una lista de algunas
               herramientas y lenguajes con las que he trabajado hasta la fecha:
-            </p>
-            <div className="slider">
+            </p><div className="slider">
               <div className="slide-track">
-                <div className="slide">
-                  <img src={logoHTML} alt="HTML logo" aria-hidden="true" />
-                  <p>HTML</p>
-                </div>
-                <div className="slide">
-                  <img src={logoCSS} alt="CSS logo" aria-hidden="true" />
-                  <p>CSS</p>
-                </div>
-                <div className="slide">
-                  <img src={logoJS} alt="JavaScript logo" aria-hidden="true" />
-                  <p>JavaScript</p>
-                </div>
-                <div className="slide">
-                  <img
-                    src={logoTS}
-                    alt="TypeScript logo"
-                    aria-hidden="true"
-                    className="logoTS"
-                  />
-                  <p>TypeScript</p>
-                </div>
-                <div className="slide">
-                  <img src={logoReact} alt="React logo" aria-hidden="true" />
-                  <p>React</p>
-                </div>
-                <div className="slide">
-                  <img src={logoRedux} alt="Redux logo" aria-hidden="true" />
-                  <p>Redux</p>
-                </div>
-                <div className="slide">
-                  <img src={logoSass} alt="SASS logo" aria-hidden="true" />
-                  <p>SASS</p>
-                </div>
-
-                <div className="slide">
-                  <img
-                    src={logoCommandLine}
-                    alt="Command line logo"
-                    aria-hidden="true"
-                  />
-                  <p>Command line</p>
-                </div>
                 <div className="slide">
                   <img src={logoVSCode} alt="VSCode logo" aria-hidden="true" />
                   <p>VS Code</p>
                 </div>
                 <div className="slide">
-                  <img src={logoLinux} alt="Linux logo" aria-hidden="true" />
-                  <p>Linux</p>
+                  <img src={logoPrimeng} alt="PrimeNg logo" aria-hidden="true" />
+                  <p>PrimeNg</p>
                 </div>
                 <div className="slide">
                   <img src={logoNPM} alt="NPM logo" aria-hidden="true" />
                   <p>NPM</p>
                 </div>
                 <div className="slide">
-                  <img src={logoJest} alt="Jest logo" aria-hidden="true" />
-                  <p>Jest</p>
+                  <img src={syncfusion} alt="Syncfusion logo" aria-hidden="true" />
+                  <p>Syncfusion</p>
                 </div>
                 <div className="slide">
                   <img src={logoGit} alt="Git logo" aria-hidden="true" />
@@ -179,41 +136,41 @@ export const Skills = () => {
                   <p>TypeScript</p>
                 </div>
                 <div className="slide">
-                  <img src={logoReact} alt="React logo" aria-hidden="true" />
-                  <p>React</p>
+                  <img src={logoAngular} alt="Angular logo" aria-hidden="true" />
+                  <p>Angular</p>
                 </div>
                 <div className="slide">
-                  <img src={logoRedux} alt="Redux logo" aria-hidden="true" />
-                  <p>Redux</p>
+                  <img src={logoMongo} alt="MongoDB logo" aria-hidden="true" />
+                  <p>MongoDB</p>
                 </div>
                 <div className="slide">
-                  <img src={logoSass} alt="SASS logo" aria-hidden="true" />
-                  <p>SASS</p>
+                  <img src={logoBootsrap} alt="Bootstrap logo" aria-hidden="true" />
+                  <p>Bootstrap</p>
                 </div>
 
-                <div className="slide">
+                {/* <div className="slide">
                   <img
                     src={logoCommandLine}
                     alt="Command line logo"
                     aria-hidden="true"
                   />
                   <p>Command line</p>
-                </div>
+                </div> */}
                 <div className="slide">
                   <img src={logoVSCode} alt="VSCode logo" aria-hidden="true" />
                   <p>VS Code</p>
                 </div>
                 <div className="slide">
-                  <img src={logoLinux} alt="Linux logo" aria-hidden="true" />
-                  <p>Linux</p>
+                  <img src={logoPrimeng} alt="PrimeNg logo" aria-hidden="true" />
+                  <p>PrimeNg</p>
                 </div>
                 <div className="slide">
                   <img src={logoNPM} alt="NPM logo" aria-hidden="true" />
                   <p>NPM</p>
                 </div>
                 <div className="slide">
-                  <img src={logoJest} alt="Jest logo" aria-hidden="true" />
-                  <p>Jest</p>
+                  <img src={logoNode} alt="Node logo" aria-hidden="true" />
+                  <p>Node JS</p>
                 </div>
                 <div className="slide">
                   <img src={logoGit} alt="Git logo" aria-hidden="true" />
@@ -231,8 +188,8 @@ export const Skills = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </div >
+      </section >
     </>
   );
 };
