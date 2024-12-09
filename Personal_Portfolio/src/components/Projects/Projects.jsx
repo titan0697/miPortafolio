@@ -10,6 +10,7 @@ import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faAngular, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logoFirebase from "../../assets/logos/firebase-logo.svg";
 
 export const Projects = () => {
   const options = {
@@ -96,45 +97,41 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className="project project3">
-              <h2>Calendar</h2>
+
+
+            <div className="project project2">
+              <h2>Recetas App</h2>
               <ul>
+                <li>
+                  <img src={logoAngular} alt="Angular logo" aria-hidden="true" />
+
+                </li>
+                <li>
+                  <img src={logoFirebase} alt="Firebase logo" aria-hidden="true" />
+                </li>
                 <li>
                   <img src={logoHTML} alt="HTML logo" aria-hidden="true" />
                 </li>
                 <li>
-                 
-                </li>
-                <li>
-                  <img
-                    src={logoMongoDB}
-                    alt="MongoDB logo"
-                    aria-hidden="true"
-                  />
-                </li>
-                <li>
-                  
-                </li>
-                <li>
-                  <img src={logoNode} alt="Node logo" aria-hidden="true" />
+                  <img src={logoCSS} alt="CSS logo" aria-hidden="true" />
                 </li>
               </ul>
               <p>
-                Calendario desarrollado utilizando MERN stack (MongoDB, Express,
-                React y Node).
+                Aplicación desarrollada utilizando Angular como framework principal, con base de datos en Firebase y sistema de autenticación implementado a través de Firebase Authentication.
               </p>
               <div className="project-links-container">
-                <a href="/">
+                <a href="https://recetas-b1739.web.app/login" target="_blank">
                   Ir al proyecto{" "}
                   <FontAwesomeIcon
                     icon={faArrowUpRightFromSquare}
                   ></FontAwesomeIcon>
                 </a>
-                <a href="/">
-                  Ver código <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-                </a>
               </div>
             </div>
+
+
+
+
             <div className="project project4">
               <h2>Hospital App</h2>
               <ul>

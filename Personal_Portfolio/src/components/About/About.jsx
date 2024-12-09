@@ -28,27 +28,29 @@ export const About = () => {
         <div className="About__section-grid section-grid">
           <div className="About__section-content-left">
             <p>
-              Mi nombre es Cristiam y actualmente resido en Heredia, estudiante de la Universidad
-              Nacional de Costa Rica. Tambien he cursado cursos de manera autodidacta, en la plataforma: {" "}
+              <h1>
+                <span className="gradient-text about-title">Sobre mí</span>
+              </h1>
+              Mi nombre es <strong> Cristiam</strong>, soy graduado de la <strong> Universidad Nacional de Costa Rica </strong> y he complementado mi formación académica con cursos autodidactas en plataformas como {" "}
               <a
                 href="https://www.udemy.com/"
                 className="gradient-text"
                 target="_blank"
+                rel="noreferrer"
               >
                 Udemy
               </a>
+
               .
               <br /> <br />
-              Siempre he tenido especial interés por el funcionamiento de las
-              tecnologías. Así como
-              mi interés por lo visual y lo estético, me ha llevado a optar por
-              la vía del desarrollo Front-End.
+              Mi pasión por comprender cómo funcionan las tecnologías me ha llevado a desarrollar habilidades que abarcan diferentes áreas del desarrollo de software.
               <br /> <br />
-              Fuera del mundo del código, disfruto el futbol, cine y también los videojuegos.
+              Fuera del mundo del código, disfruto del fútbol, el cine y los videojuegos, actividades que me inspiran y me ayudan a mantener un equilibrio personal y profesional.
               <br /> <br />
-              Me considero una persona honesta y comprometida, a la que le
-              gustan los retos y que disfruta de trabajar en un ambiente
-              positivo y de constante aprendizaje.
+              <h1>
+                <span className="gradient-text about-title">Valores y mentalidad</span>
+              </h1>
+              Me considero una persona honesta, comprometida y con gusto por los retos, siempre en búsqueda de trabajar en un entorno positivo y de constante aprendizaje. Estoy motivado por contribuir con soluciones innovadoras y efectivas, mientras sigo creciendo como profesional en el mundo del desarrollo tecnológico.
             </p>
           </div>
           <div className="About__section-content-right">

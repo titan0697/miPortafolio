@@ -1,9 +1,7 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import logoHTML from "../../assets/logos/html-logo.svg";
 import logoCSS from "../../assets/logos/css-logo.svg";
 import logoJS from "../../assets/logos/javascript-logo.svg";
-import logoSass from "../../assets/logos/sass-logo.svg";
-import logoReact from "../../assets/logos/react-logo.svg";
 import logoAngular from "../../assets/logos/logo-angular.svg";
 import logoMongo from "../../assets/logos/mongodb-ar21.svg";
 import logoNode from "../../assets/logos/node-logo.svg";
@@ -12,16 +10,9 @@ import logoGitHub from "../../assets/logos/github-logo.svg";
 import logoBootsrap from "../../assets/logos/bootstrap-5-1.svg";
 import syncfusion from "../../assets/logos/syncfusion.svg";
 import logoPrimeng from "../../assets/logos/_presskit_primeng-logo.svg";
-import logoLinux from "../../assets/logos/linux-logo.svg";
 import logoVSCode from "../../assets/logos/vscode-logo.svg";
 import logoNPM from "../../assets/logos/npm-logo.svg";
-import logoJest from "../../assets/logos/jest-logo.svg";
 import logoTS from "../../assets/logos/typescript.png";
-import logoCommandLine from "../../assets/logos/command-line.png";
-import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 
 export const Home = () => {
@@ -33,12 +24,12 @@ export const Home = () => {
           <div className="home__section-content-left">
             <div>
               <h1 className="line-1">Bienvenid@. </h1> <br />
-              <h1 className="line-2"> Me llamo Cristiam,</h1> <br />
+              <h1 className="line-2"> Me llamo<strong className="gradient-text"> Cristiam</strong></h1> <br />
               <h1 className="line-3">
                 y soy desarrollador
                 <span className="gradient-text line-gradient text-reveal-4">
                   {" "}
-                  Front-End
+                  Full-Stack
                 </span>
                 .
               </h1>

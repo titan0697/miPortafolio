@@ -2,12 +2,8 @@ import React, { useEffect } from "react";
 import logoHTML from "../../assets/logos/html-logo.svg";
 import logoCSS from "../../assets/logos/css-logo.svg";
 import logoJS from "../../assets/logos/javascript-logo.svg";
-import logoSass from "../../assets/logos/sass-logo.svg";
-import logoReact from "../../assets/logos/react-logo.svg";
-import logoRedux from "../../assets/logos/redux-logo.svg";
 import logoGit from "../../assets/logos/git-logo.svg";
 import logoGitHub from "../../assets/logos/github-logo.svg";
-import logoLinux from "../../assets/logos/linux-logo.svg";
 import logoBootsrap from "../../assets/logos/bootstrap-5-1.svg";
 import syncfusion from "../../assets/logos/syncfusion.svg";
 import logoPrimeng from "../../assets/logos/_presskit_primeng-logo.svg";
@@ -16,11 +12,8 @@ import logoMongo from "../../assets/logos/mongodb-ar21.svg";
 import logoNode from "../../assets/logos/node-logo.svg";
 import logoVSCode from "../../assets/logos/vscode-logo.svg";
 import logoNPM from "../../assets/logos/npm-logo.svg";
-import logoJest from "../../assets/logos/jest-logo.svg";
 import logoTS from "../../assets/logos/typescript.png";
-import logoCommandLine from "../../assets/logos/command-line.png";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -71,14 +64,10 @@ export const Skills = () => {
           </div>
           <div className="Skills__section-content-right">
             <p>
-              Mis competencias se centran principalmente en el desarrollo
-              Front-End, siendo mis herramientas principales HTML, CSS y
-              JavaScript con Angular.
+              Mis competencias abarcan tanto el desarrollo Front-End como el Back-End, lo que me permite construir soluciones completas y escalables. En el Front-End, trabajo con herramientas como HTML, CSS y JavaScript, utilizando Angular como uno de mis principales frameworks. En el Back-End, manejo tecnologías como Node.js, Express, y bases de datos relacionales y no relacionales como MySQL y MongoDB.
               <br />
               <br />
-              Me encuentro en constante aprendizaje, expandiendo mis
-              conocimientos en Angular y aprendiendo nuevas librerías así como
-              creando nuevos proyectos.
+              Estoy en constante aprendizaje, ampliando mis conocimientos en nuevas tecnologías, frameworks y librerías, mientras desarrollo proyectos que fortalecen mis habilidades y aportan valor a los usuarios.
               <br />
               <br />A continuación encontrarás una lista de algunas
               herramientas y lenguajes con las que he trabajado hasta la fecha:
