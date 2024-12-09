@@ -61,7 +61,7 @@ export const Skills = () => {
                 <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
               </a>
             </div>
-          </div>
+          </div> 
           <div className="Skills__section-content-right">
             <p>
               Mis competencias abarcan tanto el desarrollo Front-End como el Back-End, lo que me permite construir soluciones completas y escalables. En el Front-End, trabajo con herramientas como HTML, CSS y JavaScript, utilizando Angular como uno de mis principales frameworks. En el Back-End, manejo tecnologías como Node.js, Express, y bases de datos relacionales y no relacionales como MySQL y MongoDB.
